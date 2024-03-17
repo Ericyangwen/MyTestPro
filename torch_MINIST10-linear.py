@@ -55,7 +55,7 @@ def train(epoch):
 
         train_loss+=tempLoss.item()
         if bach_index % 300 == 299:
-            print('[%d, %5d] loss: %.3f' % (epoch + 1, bach_index + 1, train_loss / 300))
+            print('[%d, %5d] loss: %.3f' % (epoch + 1, bach_index + 1, train_loss / 3000))
             train_loss = 0
 
 '''测试部分'''
